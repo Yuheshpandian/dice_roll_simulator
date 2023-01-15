@@ -1,10 +1,12 @@
+# importing all required libraries
 import pygame
 import random
 
+# initialising pygame
 pygame.init()
 
 font = pygame.font.Font("freesansbold.ttf", 50)
-
+#display
 screen = pygame.display.set_mode((700, 700))
 
 pygame.display.set_caption('DICE-ROLL SIMULATOR')
@@ -34,6 +36,8 @@ run = True
 win1_text = font.render('CLICK TO ROLL THE DICE', True, 'black')
 win2_text = font.render('YOU GOT ^_^', True, 'black')
 win2_text2 = font.render('roll again', True, 'black')
+
+
 def win2(clr,obj,pos):
     run1 = True
     screen2 = pygame.display.set_mode((700, 700))
@@ -53,7 +57,7 @@ def win2(clr,obj,pos):
         pygame.display.flip()
 
 
-
+# main loop
 while run:
 
     for event in pygame.event.get():
