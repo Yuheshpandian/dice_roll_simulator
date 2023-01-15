@@ -19,6 +19,7 @@ back = pygame.transform.scale(pygame.image.load('PngItem_5262081.png'), (100,100
 back_rect = back.get_rect()
 back_rect.topleft = (300, 500)
 
+# func tat is called when roll_btn is clicked
 def btn_clicked(rect, img):
     mouse_pos = pygame.mouse.get_pos()
 
@@ -28,7 +29,7 @@ def btn_clicked(rect, img):
         if pygame.mouse.get_pressed()[2]:
             return True
 
-
+# list containing all paths of dice faces
 dice = ['dice-six-faces-five.png', 'dice-six-faces-four.png', 'dice-six-faces-one.png', 'dice-six-faces-six.png', 'dice-six-faces-two.png', 'dice-six-faces-three.png']
 
 run = True
