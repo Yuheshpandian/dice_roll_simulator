@@ -19,7 +19,7 @@ back = pygame.transform.scale(pygame.image.load('PngItem_5262081.png'), (100,100
 back_rect = back.get_rect()
 back_rect.topleft = (300, 500)
 
-# func tat is called when roll_btn is clicked
+# func that is called when roll_btn is clicked
 def btn_clicked(rect, img):
     mouse_pos = pygame.mouse.get_pos()
 
@@ -33,12 +33,12 @@ def btn_clicked(rect, img):
 dice = ['dice-six-faces-five.png', 'dice-six-faces-four.png', 'dice-six-faces-one.png', 'dice-six-faces-six.png', 'dice-six-faces-two.png', 'dice-six-faces-three.png']
 
 run = True
-
+# text guides to click the btn
 win1_text = font.render('CLICK TO ROLL THE DICE', True, 'black')
 win2_text = font.render('YOU GOT ^_^', True, 'black')
 win2_text2 = font.render('roll again', True, 'black')
 
-
+# func to display the dice 
 def win2(clr,obj,pos):
     run1 = True
     screen2 = pygame.display.set_mode((700, 700))
